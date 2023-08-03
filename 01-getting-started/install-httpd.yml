@@ -1,5 +1,5 @@
-- hosts: test-servers
-  remote_user: nahmed
+- hosts: all
+  remote_user: root
   become: true
   vars:
     project_root: /var/www/html
@@ -14,4 +14,3 @@
   handlers:
   - name: restart apache
     service: name=httpd state=restarted
-
