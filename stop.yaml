@@ -7,3 +7,6 @@
     ansible.builtin.service:
       name: httpd
       state: stopped
+   
+  - name: Enable Apache on system reboot
+    service: name=httpd enabled=yes
