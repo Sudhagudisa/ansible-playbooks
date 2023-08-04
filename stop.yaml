@@ -1,0 +1,9 @@
+- hosts: all
+  remote_user: root
+  become: true
+
+  tasks:  
+  - name: Install Apache Webserver
+    ansible.builtin.service:
+      name: httpd
+      state: stopped
