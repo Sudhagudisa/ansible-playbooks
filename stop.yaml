@@ -8,5 +8,5 @@
       name: httpd
       state: stopped
    
-  - name: Enable Apache on system reboot
-    service: name=httpd enabled=yes
+  - name: Disable Apache on system
+    service: name=httpd enabled=false
