@@ -18,4 +18,4 @@
       var: "{{ item }}"
     with_items:
 #      - "{{ result0.state }}"
-      - "{{ result1.status.UnitFileState }}"
+      - "{{ result1.status.UnitFileState.item }}"
