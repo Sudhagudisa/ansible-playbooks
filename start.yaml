@@ -7,11 +7,11 @@
     ansible.builtin.service:
      name: httpd
      state: started
-    register: result-status
+    register: result
 
   - name: Enable Apache on system reboot
     service: name=httpd enabled=yes
-    register: result-enable
 
-  - debug:
-        msg: "Apache Status {{result-status}} & {{result-enable }}"
+  - name: Apache Status
+    debug:
+      msg: "{{result}}"
