@@ -15,5 +15,6 @@
 
   - name: Apache Status
     debug:
-      - var1: {{result0.status}}
-      - var2: {{result1.status.ActiveState}}
+      msg
+        var1: {{result0.status}}
+        var2: {{result1.status.ActiveState}}
