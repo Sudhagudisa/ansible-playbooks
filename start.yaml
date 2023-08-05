@@ -14,4 +14,4 @@
 
   - name: Apache Status
     debug:
-      msg: "{{result}}"
+      var: result.status.ActiveState
