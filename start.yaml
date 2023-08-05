@@ -17,5 +17,5 @@
     debug:
       var: "{{ item }}"
     with_items:
-      - {{result0.status}}
-      - {{result1.status.ActiveState}}
+      - "{{ result0.status }}"
+      - "{{ result1.status.ActiveState }}"
