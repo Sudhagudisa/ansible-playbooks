@@ -15,4 +15,3 @@
   - name: Apache Status
     debug:
       var: result.state
-      var2: result.status.ActiveState
