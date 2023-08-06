@@ -17,4 +17,4 @@
     ansible.builtin.debug: 
       msg: 
 #      - "{{ result0 }}"
-      - "{{ result1 }}"
+      - "{{ result1.status.ActiveState }}"
