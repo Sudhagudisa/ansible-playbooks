@@ -14,8 +14,7 @@
     register: result1
 
   - name: Apache Status
-    debug:
-      var: "{{ item }}"
-    with_items:
-#      - "{{ result0.state }}"
-      - "{{ result1.status.UnitFileState.item }}"
+    ansible.builtin.debug: 
+      msg: 
+      - "{{ result0.state}}"
+      - "{{ result1.status.ActiveState }}"
