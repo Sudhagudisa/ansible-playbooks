@@ -14,7 +14,7 @@
     register: result1
 
   - name: Apache Status
-        ansible.builtin.debug:
-          msg:
-          - "{{ result0.state}}"
-          - "{{ result1.status.ActiveState }}"
+    ansible.builtin.debug:
+      msg:
+        - "{{ result0.state}}"
+        - "{{ result1.status.ActiveState }}"
