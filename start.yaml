@@ -16,5 +16,5 @@
   - name: Apache Status
     ansible.builtin.debug: 
       msg: 
-      - "{{ result0.state }}"
-      - "{{ result1.status.UnitFileState.item }}"
+      - "{{ result0 }}"
+      - "{{ result1 }}"
