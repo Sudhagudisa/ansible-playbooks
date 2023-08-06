@@ -16,5 +16,5 @@
   - name: Apache Status
     ansible.builtin.debug: 
       msg: 
-#      - "{{ result0 }}"
-      - "{{ result1.status.ActiveState }}"
+      - "{{ result0.status}}"
+#      - "{{ result1.status.ActiveState }}"
