@@ -7,11 +7,14 @@
     ansible.builtin.service:
       name: httpd
       state: stopped
-    register: result
+    register: result0
    
   - name: Disable Apache Webserver
     service: name=httpd enabled=false
+    register: result1
 
   - name: Apache Status
-    debug:
-      var: result.state
+        ansible.builtin.debug:
+          msg:
+          - "{{ result0.state}}"
+          - "{{ result1.status.ActiveState }}"
